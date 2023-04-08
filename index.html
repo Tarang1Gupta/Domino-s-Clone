@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominos</title>
+    <style>
+    body{
+    margin: 0;
+    padding: 0%;
+}
+nav{
+    width: 100%; height: 15vh;
+    background: transparent;
+    color: white; display: flex; justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+    
+}
+nav img{
+    width: 25%; text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex; justify-content: space-around;
+}
+nav .menu>a{
+    width: 25%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav .menu>a:first-child{
+    color: #00b894;
+}
+header{
+    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(back62.jpg);
+    color: white;
+    padding-top:200px;
+    text-align: center;
+    height: 400px;
+    background-size: cover;
+    font-size: 30px;
+    
+}
+header>h1{
+    text-shadow: 4px 5px 7px rgb(243, 8, 8);
+}
+header a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+header .btnone{
+    background: #fff;
+    color: #000;
+}
+header .btnone:hover{
+    background: #054437;
+    color: white;
+}
+header .btntwo{
+    background: #00b894;
+    color: white;
+}
+header .btntwo:hover{
+    background: rgb(72, 77, 4);
+    color: #000;
+}
+.change:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #f35f45;
+}
+@keyframes changetext{
+    0%{content: "Onion";}
+    20%{content: "Tomatoes";}
+    35%{content: "Chees";}
+    60%{content: "Mushrooms";}
+    80%{content: "Corn";}
+    100%{content: "Pepper";}
+}
+.sec1>div{
+    display:inline-block;
+    width: 500px;
+    margin: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+    
+}
+.sec1>div>h1{
+    font-size: 30px;
+    background-color: rgb(32, 85, 67);
+    color: white;
+}
+.para{
+    font-weight: bold;
+    font-size: 20px;
+}
+.sec1>div>img{
+    width: 400px;
+    float: right;
+    margin-left: 100px;
+    border-radius: 20px;
+    
+}
+#sec2>div{
+    display:inline-block;
+    width: 500px;
+    margin: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+
+}
+#sec2>div>h1{
+    font-size: 30px;
+    background-color: rgb(32, 85, 67);
+    color: white;
+}
+#sec2>p{
+    font-weight: bold;
+    font-size: 20px;
+}
+#sec2>div>img{
+    width: 400px;
+    float: right;
+    margin-left: 100px;
+    border-radius: 20px;
+    
+}
+footer{
+    padding-left: 45px;
+    padding-bottom: 60px;
+}
+footer>div{
+    display: inline-block;
+    width: 300px;
+    background-color: rgb(166, 167, 166);
+    text-align: center;
+    position: relative;
+    margin-left: 10px;
+    height: 300px;
+    padding-top: 40px;
+}
+footer>div>h4{
+    text-transform:uppercase;
+}
+footer>div>img{
+    width: 70px;
+    float: initial;
+}
+footer>div>button{
+    background-color: rgb(20, 19, 20);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+footer>div>button:hover{
+    background-color: rgb(240, 88, 108);
+    color: white;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="dominos.png">
+        <div class="menu">
+            <a href="MyWork.html">Home</a>
+            <a href="MyWork.html">About</a>
+            <a href="MyWork.html">Our Menu</a>
+            <a href="MyWork.html">Contact</a>
+            <a href="MyWork.html">Offer</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Welcome To Domino's Home </h1>
+        <h2>Do you like <span class="change"></span> pizza</h2>
+        <a href="#" class="btnone">lear more</a>
+        <a href="#" class="btntwo" onclick="Form()">signup here</a>
+    </header>
+    <section>
+        <section  class="sec1">
+            <div>
+                <h1>Domino's Pizza: Delivering Happiness</h1>
+                <p id="para">What’s better than having a crispy melty pizza, you ask?</p>
+                <p>Having that crispy and melty pizza in the comfort of your own home with the ones you love, we say.
+    
+                    With Domino's it is always “Rishton ka time”. Whether it's a treat for your promotion, a kid topping his class or winning the heart of your wife who is too tired to cook after a long day at work! A cheesy slice of the best pizza is all one needs to put things into perspective and start any celebration. Plus, you do not even need to rush to the restaurant to have one now. A call, a few clicks on our website or a few touches on the mobile screen is all you have to do to have that tempting, light-on-the-pocket pizza at your doorstep.   
+                </p>
+                </div>
+                <div >
+                     <img src="pizza1.jpg" alt="">
+                </div>
+        </section>
+        <section id="sec2">
+            <div >
+                <h1>What We Need - More Choice. More Fun.</h1>
+                <p>No matter what the situation, pizza always helps. Especially a pizza that gives you the freedom to choose your toppings - from paneer, crisp capsicum, onion, grilled mushroom, golden corn, black olives, fresh tomato, red paprika, jalapeno, paneer tikka and extra cheese to non-veg toppings such as pepper barbeque chicken, peri-peri chicken, grilled chicken rasher, chicken sausage or chicken tikka- the options are almost endless, anything and everything you can think of that too on top of the crust of your choice - New hand-tossed crust, wheat thin crust, cheese burst crust, classic hand-tossed crust or a fresh pan pizza. Because just like a pizza, Domino's understands you.
+                   </p>
+            </div>
+                <div>
+                    <img src="pizza2.jpg" alt="">
+                </div>
+        </section>
+        
+        <section class="sec1">
+            <div >
+                <h1>The Promise Of 30-Minute Delivery</h1>
+                <p>The icing on the cake or more aptly the extra cheese on your already fabulous pizza is that Domino’s takes only half an hour for its pizza delivery service. Don’t believe us? Time it if you please. With 1250+ stores present all over India, you can have a Domino’s pizza even while traveling on a train. Yes, you are reading it right, you can enjoy pizza on train too.So stop googling for the “pizza shops near me” and order from your nearest pizza outlet to have a hot box of pizza on your table in the next 30 minutes, or berth at the next halting station.</p>
+            </div>
+            <div>
+                <img src="pizza3.jpg" alt="">
+            </div>
+        </section>
+    </section>
+    <footer> 
+    <div>
+        <img src="menu.png" alt="">
+        <h4>Our Menu</h4>
+        <p>Explor our range of delicious pizza.</p>
+        <button>Discover Pizza</button>
+    </div>
+    <div>
+        <img src="home.png" alt="">
+        <h4>Nearby Store</h4>
+        <p>Explor our restaurant of delicious pizza.</p>
+        <button>Find Domino’s Store</button>
+    </div>
+    <div>
+        <img src="birth.png" alt="">
+        <h4>Birthday party</h4>
+        <p>Celebration Birthday with joy and with pizza</p>
+        <button>book now</button>
+    </div>
+    <div>
+        <img src="dinner.png" alt="">
+        <h4>catering</h4>
+        <p>Live Domino’s kitchen for wedding</p>
+        <button>book now</button>
+    </div>
+</footer>
+
+</body>
+<script>
+    function Form(){
+        alert("Hi Tarang Gupta");
+    
+    }
+</script>
+</html>
